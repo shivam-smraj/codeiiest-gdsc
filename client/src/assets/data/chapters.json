@@ -1,598 +1,398 @@
 {
-    "development": {
-        "chapterContent": {
-            "leads": [
-                {
-                    "name": "Abhijit Karmakar",
-                    "codeiiest": "Frontend lead",
-                    "gdg": "UI/UX lead",
-                    "profilepic": "abhijitkarmakar.webp",
-                    "description":"The feel is more important than the code behind it.",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                },
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "tejaspawar.webp",
-                    "description":"Building what you don't see, powering what you can't ignore.",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                }
-            ],
-            "coreMembers": [
-                {
-                    "name": "Abhijit Karmakar",
-                    "codeiiest": "Frontend Lead",
-                    "gdg": "UI-UX Lead",
-                    "image": "abhijitkarmakar.webp",
-                    "tagline": "The feel is more important than the code behind it",
-                    "team": "Dev",
-                    "website": "https://abhijit-karmakar.vercel.app/"
-                },
-                {
-                    "name": "Soham Haldar",
-                    "codeiiest": "Cybersecurity Lead",
-                    "gdg": "ML core team member",
-                    "image": "sohamhaldar.webp",
-                    "tagline": "The quieter you become, the more you are able to hear.",
-                    "team": "Cybersecurity",
-                    "website": "http://www.linkedin.com/in/soham-haldar-a088a529a"
-                },
-                {
-                    "name": "MOHAK SINGH",
-                    "codeiiest": "CP Lead",
-                    "gdg": "CP Core Member",
-                    "image": "mohaksingh.webp",
-                    "tagline": "Intuition in coding is like a GPS without signal: A Wild Guess!",
-                    "team": "CP/DSA",
-                    "website": "https://www.linkedin.com/in/mohak-singh-572745252"
-                },
-                {
-                    "name": "Hanzala Sharique",
-                    "codeiiest": "CP Core Team Member",
-                    "gdg": "CP Team Core Member",
-                    "image": "hanzalasharique.webp",
-                    "tagline": "Burnerace at the crease: smashing code challenges for six!",
-                    "team": "CP/DSA",
-                    "website": "https://www.linkedin.com/in/hanzala-sharique-944b69286"
-                },
-                {
-                    "name": "Tejas Pawar",
-                    "codeiiest": "Backend Lead",
-                    "gdg": "Development Team Core Member",
-                    "image": "tejaspawar.webp",
-                    "tagline": "Building what you don't see, powering what you can't ignore",
-                    "team": "Dev",
-                    "website": "https://www.linkedin.com/in/tejas-pawar"
-                },
-                {
-                    "name": "Subhrajit Deb",
-                    "codeiiest": "AI & ML Team Member",
-                    "gdg": "ML/AI Team Member",
-                    "image": "subhrajitdeb.webp",
-                    "tagline": "Let it Be or Make it Happen!",
-                    "team": "AI & ML",
-                    "website": "www.linkedin.com/in/subhrajit-deb2"
-                },
-                {
-                    "name": "Suraj Kashyap",
-                    "codeiiest": "Treasurer",
-                    "gdg": "CP Lead",
-                    "image": "surajkashyap.webp",
-                    "tagline": "In CP, the journey is as important as the destination.",
-                    "team": "CP/DSA",
-                    "website": "https://www.linkedin.com/in/kashyap"
-                },
-                {
-                    "name": "Sarah Jane Topno",
-                    "codeiiest": "ML Team core member",
-                    "gdg": "ML lead",
-                    "image": "sarahjane.webp",
-                    "tagline": "Data whisperer by day, algorithm wrangler by night.",
-                    "team": "AI & ML",
-                    "website": "https://www.linkedin.com/in/sarah-jane-topno"
-                },
-                {
-                    "name": "Siddharth Sen",
-                    "codeiiest": "Core Team of Dev Chapter",
-                    "gdg": "AI & ML Core Team",
-                    "image": "siddharthsen.jpeg",
-                    "tagline": "Just like in test cricket, every line of code and every decision matters.",
-                    "team": "Dev",
-                    "website": ""
-                },
-                {
-                    "name": "Samyajit Das",
-                    "codeiiest": "General Secretary",
-                    "gdg": "Co-Lead",
-                    "image": "samyajitdas.webp",
-                    "tagline": "Coding the Future, One Challenge at a Time",
-                    "team": "CP/DSA",
-                    "website": "https://www.linkedin.com/in/samyajit"
-                },
-                {
-                    "name": "Angshuman Roy",
-                    "codeiiest": "AI & ML Lead",
-                    "gdg": "AI & ML Core Team Member",
-                    "image": "angshumanroy.png",
-                    "tagline": "If you want to shine like a sun, first burn like a sun.",
-                    "team": "AI & ML",
-                    "website": "https://www.linkedin.com/in/angshuman"
-                },
-                {
-                    "name": "Swastika Kar",
-                    "codeiiest": "Diversity Lead",
-                    "gdg": "Lead",
-                    "image": "swastikakar.jpeg",
-                    "tagline": "Just Code It—With Google as My Sidekick",
-                    "team": "Diversity",
-                    "website": "https://www.linkedin.com/in/swas-kar"
-                }
-            ],
-            "events": [
-                {
-                    "eventName": "Webgame CHallenge",
-                    "date": "2024-06-15",
-                    "location": "Online",
-                    "description": "Annual coding competition",
-                    "total": 5,
-                    "progress": 3
-                },
-                {
-                    "eventName": "Workshop: React Basics",
-                    "date": "2024-07-10",
-                    "location": "Institute Hall",
-                    "description": "Learn the fundamentals of React",
-                    "total": 5,
-                    "progress": 1
-                }
-            ],
-            "iconset": [
-                {
-                    "icon": "Voice",
-                    "byline": "Talks in HTML"
-                },
-                {
-                    "icon": "Bug",
-                    "byline": "Dark mode mandatory"
-                },
-                {
-                    "icon": "Gun",
-                    "byline": "Kills bugs without spray"
-                },
-                {
-                    "icon": "Sunglasses",
-                    "byline": "Love for designers"
-                }
-            ],
-            "title": "DEV DYNAMITES",
-            "highlight": {
-                "heading": "AIM",
-                "byline": "Building the future, one component at a time",
-                "icon": "Poison",
-                "iconheading": "CAUTION",
-                "iconbyline": "Unresolved bugs hidden in comments"
-            },
-            "description": "Hey there, fellow digital daredevils! We're the developer team, a quirky bunch of code aficionados on a mission to make the internet a more fun and functional place, one line at a time. Our developers are not mere architects of software; they are creators, sculpting virtual worlds with keystrokes and ingenuity. Join our tribe of tech magicians, where innovation is our wand and creativity knows no bounds!",
-            "byline": "Ignore the downfalls of your life just like how you ignored the inverted skull."
+  "development": {
+    "chapterContent": {
+      "leads": [
+        {
+          "name": "Subhajit Gorai",
+          "codeiiest": "Dev Co-lead",
+          "profilepic": "subhajitgorai.jpg",
+          "description": "Before you engineer the system, understand the physics of its flow.",
+          "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        },
+        {
+          "name": "Aratrika Gupta",
+          "codeiiest": "Core Member",
+          "gdg": "Dev Co-lead",
+          "profilepic": "aratika.png",
+          "description": "i am just ://",
+          "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
+        },
+        {
+          "name": "Tejas Pawar",
+          "codeiiest": "Backend Lead",
+          "gdg": "Dev Core Member",
+          "profilepic": "tejaspawar.webp",
+          "description": "Building what you don't see, powering what you can't ignore.",
+          "website": "https://www.linkedin.com/in/tejaspawar429/"
         }
-    },
-    "cybersecurity": {
-        "chapterContent": {
-            "leads": [
-                {
-                    "name": "Soham Haldar",
-                    "codeiiest": "Cybersecurity Lead",
-                    "gdg": "ML core member",
-                    "profilepic": "sohamhaldar.webp",
-                    "description":"The quieter you become, the more you are able to hear.",
-                    "website": "http://www.linkedin.com/in/soham-haldar-a088a529a"
-        
-                }
-            ],
-            "coreMembers": [
-                {
-                    "name": "Soham Haldar",
-                    "codeiiest": "Cybersecurity Lead",
-                    "gdg": "ML core member",
-                    "profilepic": "sohamhaldar.webp",
-                    "description":"The quieter you become, the more you are able to hear.",
-                    "website": "http://www.linkedin.com/in/soham-haldar-a088a529a"
-        
-                },
-                {
-                    "name": "Angshuman Roy",
-                    "codeiiest": "AI/ML Lead",
-                    "gdg": "AI/ML core member",
-                    "profilepic": "sohamhaldar.webp",
-                    "description":"カナヅチでも船から落ちなきゃいいじゃないか！",
-                    "website": "https://www.linkedin.com/in/angshuman-roy-91620022a/"
-        
-                }
-            ],
-            "events": [
-                {
-                    "eventName": "Intro to Cybersecurity",
-                    "date": "tbd",
-                    "location": "OFFLINE",
-                    "description": "Cybersecurity induction meet",
-                    "total": 5,
-                    "progress": 0
-                }
-            ],
-            "iconset": [
-                {
-                    "icon": "Fish",
-                    "byline": "Loves phishing"
-                },
-                {
-                    "icon": "Injection",
-                    "byline": "SQL injection vaccinated"
-                },
-                {
-                    "icon": "Chair",
-                    "byline": "Works in office chair"
-                },
-                {
-                    "icon": "Linux",
-                    "byline": "Worship the kali-linux dragon"
-                }
-            ],
-            "title": "CYBER SQUAD",
-            "highlight": {
-                "heading": "PRINCIPLES",
-                "byline": "Keep it complex. Never let them know your next move",
-                "icon": "Percent",
-                "iconheading": "",
-                "iconbyline": "Hack efficiency"
-            },
-            "description": "The Cybersecurity chapter of CodeIIEST provides insights into safeguarding digital systems, covering encryption methods, network security protocols, and threat mitigation strategies. It emphasizes proactive measures to defend against cyber threats and ensure the integrity of data and systems. So what are you waiting for? Join the team and let the hack begin!",
-            "byline": "Pro tip: You can't fall for scams if you never check your emails."
+      ],
+      "coreMembers": [
+        {
+          "name": "Abhijit Karmakar",
+          "codeiiest": "Frontend Lead",
+          "gdg": "UI/UX Lead",
+          "image": "abhijitkarmakar.webp",
+          "tagline": "The feel is more important than the code behind it.",
+          "team": "Dev",
+          "website": "https://abhijit-karmakar.vercel.app/"
+        },
+        {
+          "name": "Abhirup Saha",
+          "codeiiest": "Cybersecurity Lead",
+          "gdg": "Cybersecurity Core Member",
+          "image": "abhirupsaha.jpg",
+          "tagline": "aHR0cHM6Ly9qb3liYWl0LnZlcmNlbC5hcHAv",
+          "team": "Cybersecurity",
+          "website": "http://www.linkedin.com/in/soham-haldar-a088a529a"
+        },
+        {
+          "name": "Mohak Singh",
+          "codeiiest": "CP Lead",
+          "gdg": "CP Core Member",
+          "image": "mohaksingh.webp",
+          "tagline": "Intuition in coding is like a GPS without signal: A Wild Guess!",
+          "team": "CP/DSA",
+          "website": "https://www.linkedin.com/in/mohak-singh-572745252"
+        },
+        {
+          "name": "Hanzala Sharique",
+          "codeiiest": "CP Core Team Member",
+          "gdg": "CP Team Core Member",
+          "image": "hanzalasharique.webp",
+          "tagline": "Burnerace at the crease: smashing code challenges for six!",
+          "team": "CP/DSA",
+          "website": "https://www.linkedin.com/in/hanzala-sharique-944b69286"
+        },
+        {
+          "name": "Tejas Pawar",
+          "codeiiest": "Backend Lead",
+          "gdg": "Development Team Core Member",
+          "image": "tejaspawar.webp",
+          "tagline": "Building what you don't see, powering what you can't ignore.",
+          "team": "Dev",
+          "website": "https://www.linkedin.com/in/tejas-pawar"
+        },
+        {
+          "name": "Subhrajit Deb",
+          "codeiiest": "AI & ML Team Member",
+          "gdg": "ML/AI Team Member",
+          "image": "subhrajitdeb.webp",
+          "tagline": "Let it Be or Make it Happen!",
+          "team": "AI & ML",
+          "website": "https://www.linkedin.com/in/subhrajit-deb2"
+        },
+        {
+          "name": "Suraj Kashyap",
+          "codeiiest": "Treasurer",
+          "gdg": "CP Lead",
+          "image": "surajkashyap.webp",
+          "tagline": "In CP, the journey is as important as the destination.",
+          "team": "CP/DSA",
+          "website": "https://www.linkedin.com/in/kashyap"
+        },
+        {
+          "name": "Sarah Jane Topno",
+          "codeiiest": "ML Team Core Member",
+          "gdg": "ML Lead",
+          "image": "sarahjane.webp",
+          "tagline": "Data whisperer by day, algorithm wrangler by night.",
+          "team": "AI & ML",
+          "website": "https://www.linkedin.com/in/sarah-jane-topno"
+        },
+        {
+          "name": "Siddharth Sen",
+          "codeiiest": "Core Team of Dev Chapter",
+          "gdg": "AI & ML Core Team",
+          "image": "siddharthsen.jpeg",
+          "tagline": "Just like in test cricket, every line of code and every decision matters.",
+          "team": "Dev"
+        },
+        {
+          "name": "Samyajit Das",
+          "codeiiest": "General Secretary",
+          "gdg": "Co-Lead",
+          "image": "samyajitdas.webp",
+          "tagline": "Coding the Future, One Challenge at a Time.",
+          "team": "CP/DSA",
+          "website": "https://www.linkedin.com/in/samyajit"
+        },
+        {
+          "name": "Angshuman Roy",
+          "codeiiest": "AI & ML Lead",
+          "gdg": "AI & ML Core Team Member",
+          "image": "angshumanroy.png",
+          "tagline": "If you want to shine like a sun, first burn like a sun.",
+          "team": "AI & ML",
+          "website": "https://www.linkedin.com/in/angshuman"
+        },
+        {
+          "name": "Swastika Kar",
+          "codeiiest": "Diversity Lead",
+          "gdg": "Lead",
+          "image": "swastikakar.jpeg",
+          "tagline": "Just Code It—With Google as My Sidekick.",
+          "team": "Diversity",
+          "website": "https://www.linkedin.com/in/swas-kar"
         }
-    },
-    "aiml": {
-        "chapterContent": {
-            "leads": [
-                {
-                    "name": "Angshuman Roy",
-                    "codeiiest": "AI/ML Lead",
-                    "gdg": "AI/ML core member",
-                    "profilepic": "angshumanroy.png",
-                    "description":"カナヅチでも船から落ちなきゃいいじゃないか！",
-                    "website": "https://www.linkedin.com/in/angshuman-roy-91620022a/"
-        
-                }
-            ],
-            "coreMembers": [
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                },
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                },
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                },
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                },
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                }
-            ],
-            "events": [
-                {
-                    "eventName": "AI/ML induction",
-                    "date": "tbd",
-                    "location": "tbd",
-                    "description": "AI/ML induction",
-                    "total": 5,
-                    "progress": 0
-                }
-            ],
-            "iconset": [
-                {
-                    "icon": "Baby",
-                    "byline": "Needs good training"
-                },
-                {
-                    "icon": "Bigdata",
-                    "byline": "Worships big data"
-                },
-                {
-                    "icon": "Python",
-                    "byline": "Seasoned pythoner"
-                },
-                {
-                    "icon": "Heart",
-                    "byline": "Heart beats in binary"
-                }
-            ],
-            "title": "ML MARVELS",
-            "highlight": {
-                "heading": "PRINCIPLE",
-                "byline": "Forget about data quality; garbage in, noble prize out.",
-                "icon": "Users",
-                "iconheading": "",
-                "iconbyline": "Treating people as ML models"
-            },
-            "description": "Welcome to the AI Wizards of CodeIIEST, where lines of code dance with data to conjure solutions from the digital ether. Our Machine Learning Maestros specialize in weaving algorithms that learn, adapt, and automate with the precision of a well-tuned symphony. From training models to predicting future trends, we're the architects of tomorrow's digital landscape. Step into our realm, where bytes meet brilliance and innovation knows no bounds!",
-            "byline": "When the computer asks “Are you a robot ?” Maybe he just wants to find his family ?"
+      ],
+      "events": [
+        {
+          "eventName": "Webgame Challenge",
+          "date": "2024-06-15",
+          "location": "Online",
+          "description": "Annual coding competition",
+          "total": 5,
+          "progress": 3
+        },
+        {
+          "eventName": "Workshop: React Basics",
+          "date": "2024-07-10",
+          "location": "Institute Hall",
+          "description": "Learn the fundamentals of React",
+          "total": 5,
+          "progress": 1
         }
-    },
-    "cpdsa": {
-        "chapterContent": {
-            "leads": [
-                {
-                    "name": "Mohak Singh",
-                    "codeiiest": "CP/DSA Lead",
-                    "gdg": "CP core member",
-                    "profilepic": "mohaksingh.webp",
-                    "description":"Intuition in coding is like a GPS without signal: A Wild Guess!",
-                    "website": "https://www.linkedin.com/in/mohak-singh-572745252/"
-        
-                }
-            ],
-            "coreMembers": [
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                },
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                },
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                },
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                },
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                }
-            ],
-            "events": [
-                {
-                    "eventName": "CP contest",
-                    "date": "tbd",
-                    "location": "OFFLINE",
-                    "description": "CP contest for freshers",
-                    "total": 5,
-                    "progress": 0
-                }
-            ],
-            "iconset": [
-                { "icon": "Anxiety", "byline": "Thinks in O(n)" },
-                { "icon": "Cliff", "byline": "Fears edge cases" },
-                { "icon": "Checkbox", "byline": "Green tick seeker" },
-                { "icon": "Keyboard", "byline": "Speed typers" }
-            ],
-            "title": "ALGO WIZARDS",
-            "highlight": {
-                "heading": "WORKING RULE",
-                "byline": "while (code.result != AC){\nKeepGrinding(code);\n}",
-                "bylineProps": { "fontFamily": "monospace" },
-                "icon": "Running",
-                "iconheading": "",
-                "iconbyline": "Runs in 1ms"
-            },
-            "description": "Dive into the thrilling world of algorithms and problem-solving, sharpening your skills alongside passionate teammates. Unleash your creativity in solving complex puzzles and challenges. Whether you're a seasoned pro or a budding enthusiast, there's a place for you in our vibrant community. Embark on this exciting journey with us and watch as your coding prowess reaches new heights. Join the adventure today. Wishing everyone high ratings !",
-            "byline": "Live life to the fullest. Afterall, who knows when you fail on a hidden testcase or get hacked after a contest?"
-        }
-    },
-    "media": {
-        "chapterContent": {
-            "leads": [
-                {
-                    "name": "Harsh Ranjan",
-                    "codeiiest": "Media lead",
-                    "gdg": "",
-                    "profilepic": "harshranjan.webp",
-                    "description":"Decoding strings of soul.",
-                    "website": "https://www.linkedin.com/in/harshrjn/"
-                }
-            ],
-            "coreMembers": [
-                {
-                    "name": "Rishabh Dugar",
-                    "role": "Frontend Developer",
-                    "email": "rishabh.d@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
-                },
-                {
-                    "name": "Soumyajit Karmakar",
-                    "role": "Backend Developer",
-                    "email": "soumyajit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
-                }
-            ],
-            "events": [
-                {
-                    "eventName": "Hackathon",
-                    "date": "2024-06-15",
-                    "location": "Online",
-                    "description": "Annual coding competition",
-                    "total": 5,
-                    "progress": 3
-                },
-                {
-                    "eventName": "Workshop: React Basics",
-                    "date": "2024-07-10",
-                    "location": "College Auditorium",
-                    "description": "Learn the fundamentals of React",
-                    "total": 2,
-                    "progress": 1
-                }
-            ],
-            "iconset": [
-                { "icon": "Shouting", "byline": "Energetic speaker" },
-                { "icon": "Diamond", "byline": "Draws attention" },
-                { "icon": "Ink", "byline": "Great writing skills" },
-                { "icon": "Doge", "byline": "Underrated meme maestro" }
-            ],
-            "title": "MEDIA MOGULS",
-            "highlight": {
-                "heading": "OUR PRINCIPLE",
-                "byline": "from lorem ipsum to essential stories",
-                "icon": "Send",
-                "iconheading": "",
-                "iconbyline": "Sleep less, send more"
-            },
-            "description": "The Media Team at CodeIIEST is our behind-the-scenes creative powerhouse, transforming pixels and prose into digital enchantment. They craft eye-catching social media campaigns, capture our events in stunning visuals, and breathe life into our online presence. Whether promoting our latest innovations or immortalizing moments of camaraderie, the Media Team ensures our story shines brightly, inspiring, engaging, and connecting with our audience in extraordinary ways.",
-            "byline": "Social media is not our leisure, its our work!"
-        }
-    },
-    "diversity": {
-        "chapterContent": {
-            "leads": [
-                {
-                    "name": "Sarah Jane Topno",
-                    "codeiiest": "Diversity lead",
-                    "gdg": "ML lead",
-                    "profilepic": "sarahjane.webp",
-                    "description":"Data whisperer by day, algorithm wrangler by night.",
-                    "website": "https://www.linkedin.com/in/sarah-jane-topno-32419025a/"
-                }
-            ],
-            "coreMembers": [
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                },
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                },
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                },
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                },
-                {
-                    "name": "Tejas pawar",
-                    "codeiiest": "Backend lead",
-                    "gdg": "Development core member",
-                    "profilepic": "profilepic",
-                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
-                }
-            ],
-            "events": [
-                {
-                    "eventName": "tbd",
-                    "date": "tbd",
-                    "location": "tbd",
-                    "description": "tbd",
-                    "total": 5,
-                    "progress": 0
-                }
-            ],
-            "iconset": [
-                { "icon": "Fox", "byline": "Works in groups" },
-                { "icon": "Statue", "byline": "Champions of change" },
-                { "icon": "Happy", "byline": "Friendly vibes" },
-                { "icon": "Listen", "byline": "Patient listeners" }
-            ],
-            "title": "FUSION FORCE",
-            "highlight": {
-                "heading": "KEY TRAIT",
-                "byline": "Expert eye roller and professional nodder at meetings",
-                "icon": "Pokemon",
-                "iconheading": "",
-                "iconbyline": "Everyone is welcome",
-                "imageProps": {
-                    "width": "10rem"
-                }
-            },
-            "description": "The Diversity Team at CodeIIEST excels in the delicate art of navigating through meetings with expert eye-rolls and perfected nods. Their tireless efforts include ensuring that every pineapple pizza enthusiast and office ghost feels equally included, albeit with a hint of sarcasm. With a blend of humor and ingenuity, they strive to dismantle monotony, foster unity and champion diversity in all its quirky glory within the CodeIIEST community.",
-            "byline": "Behold, the luminary of our team, gracefully presiding at the forefront of our background image!"
-        }
+      ],
+      "iconset": [
+        { "icon": "Voice", "byline": "Talks in HTML" },
+        { "icon": "Bug", "byline": "Dark mode mandatory" },
+        { "icon": "Gun", "byline": "Kills bugs without spray" },
+        { "icon": "Sunglasses", "byline": "Love for designers" }
+      ],
+      "title": "DEV DYNAMITES",
+      "highlight": {
+        "heading": "AIM",
+        "byline": "Building the future, one component at a time",
+        "icon": "Poison",
+        "iconheading": "CAUTION",
+        "iconbyline": "Unresolved bugs hidden in comments"
+      },
+      "description": "Hey there, fellow digital daredevils! We're the developer team, a quirky bunch of code aficionados on a mission to make the internet a more fun and functional place, one line at a time. Our developers are not mere architects of software; they are creators, sculpting virtual worlds with keystrokes and ingenuity. Join our tribe of tech magicians, where innovation is our wand and creativity knows no bounds!",
+      "byline": "Ignore the downfalls of your life just like how you ignored the inverted skull."
     }
+  },
+  "cybersecurity": {
+    "chapterContent": {
+      "leads": [
+        {
+          "name": "Abhirup Saha",
+          "codeiiest": "Cybersecurity Lead",
+          "gdg": "Cybersecurity Core Member",
+          "profilepic": "abhirupsaha.jpg",
+          "description": "aHR0cHM6Ly9qb3liYWl0LnZlcmNlbC5hcHAv",
+          "website": "http://www.linkedin.com/in/soham-haldar-a088a529a"
+        }
+      ],
+      "coreMembers": [
+        {
+          "name": "Abhirup Saha",
+          "codeiiest": "Cybersecurity Lead",
+          "gdg": "Cybersecurity Core Member",
+          "image": "abhirupsaha.jpg",
+          "tagline": "aHR0cHM6Ly9qb3liYWl0LnZlcmNlbC5hcHAv",
+          "website": "http://www.linkedin.com/in/soham-haldar-a088a529a"
+        },
+        {
+          "name": "Angshuman Roy",
+          "codeiiest": "AI/ML Lead",
+          "gdg": "AI/ML Core Member",
+          "image": "angshumanroy.png",
+          "tagline": "カナヅチでも船から落ちなきゃいいじゃないか！",
+          "website": "https://www.linkedin.com/in/angshuman-roy-91620022a/"
+        }
+      ],
+      "events": [
+        {
+          "eventName": "Intro to Cybersecurity",
+          "location": "Offline",
+          "description": "Cybersecurity induction meet",
+          "total": 5,
+          "progress": 0
+        }
+      ],
+      "iconset": [
+        { "icon": "Fish", "byline": "Loves phishing" },
+        { "icon": "Injection", "byline": "SQL injection vaccinated" },
+        { "icon": "Chair", "byline": "Works in office chair" },
+        { "icon": "Linux", "byline": "Worship the kali-linux dragon" }
+      ],
+      "title": "CYBER SQUAD",
+      "highlight": {
+        "heading": "PRINCIPLES",
+        "byline": "Keep it complex. Never let them know your next move",
+        "icon": "Percent",
+        "iconbyline": "Hack efficiency"
+      },
+      "description": "The Cybersecurity chapter of CodeIIEST provides insights into safeguarding digital systems, covering encryption methods, network security protocols, and threat mitigation strategies. It emphasizes proactive measures to defend against cyber threats and ensure the integrity of data and systems. So what are you waiting for? Join the team and let the hack begin!",
+      "byline": "Pro tip: You can't fall for scams if you never check your emails."
+    }
+  },
+  "aiml": {
+    "chapterContent": {
+      "leads": [
+        {
+          "name": "Deepon Halder",
+          "codeiiest": "ML Lead",
+          "gdg": "ML Core Member",
+          "profilepic": "",
+          "description": "Being wrong isn't a bad thing like they teach you in school. It is an opportunity to learn something.",
+          "website": "https://www.linkedin.com/in/angshuman-roy-91620022a/"
+        }
+      ],
+      "coreMembers": [],
+      "events": [
+        {
+          "eventName": "AI/ML Induction",
+          "description": "AI/ML induction meet",
+          "total": 5,
+          "progress": 0
+        }
+      ],
+      "iconset": [
+        { "icon": "Baby", "byline": "Needs good training" },
+        { "icon": "Bigdata", "byline": "Worships big data" },
+        { "icon": "Python", "byline": "Seasoned pythoner" },
+        { "icon": "Heart", "byline": "Heart beats in binary" }
+      ],
+      "title": "ML MARVELS",
+      "highlight": {
+        "heading": "PRINCIPLE",
+        "byline": "Forget about data quality; garbage in, noble prize out.",
+        "icon": "Users",
+        "iconbyline": "Treating people as ML models"
+      },
+      "description": "Welcome to the AI Wizards of CodeIIEST, where lines of code dance with data to conjure solutions from the digital ether. Our Machine Learning Maestros specialize in weaving algorithms that learn, adapt, and automate with the precision of a well-tuned symphony. From training models to predicting future trends, we're the architects of tomorrow's digital landscape. Step into our realm, where bytes meet brilliance and innovation knows no bounds!",
+      "byline": "When the computer asks 'Are you a robot?' Maybe he just wants to find his family?"
+    }
+  },
+  "cpdsa": {
+    "chapterContent": {
+      "leads": [
+        {
+          "name": "Abhinav Verma",
+          "codeiiest": "CP Lead",
+          "gdg": "CP Lead",
+          "profilepic": "abhinav.png",
+          "description": "Don't count hours, Count Accepted.",
+          "website": "https://www.linkedin.com/in/kashyapsuraj/"
+        }
+      ],
+      "coreMembers": [],
+      "events": [
+        {
+          "eventName": "CP Contest",
+          "location": "Offline",
+          "description": "CP contest for freshers",
+          "total": 5,
+          "progress": 0
+        }
+      ],
+      "iconset": [
+        { "icon": "Anxiety", "byline": "Thinks in O(n)" },
+        { "icon": "Cliff", "byline": "Fears edge cases" },
+        { "icon": "Checkbox", "byline": "Green tick seeker" },
+        { "icon": "Keyboard", "byline": "Speed typers" }
+      ],
+      "title": "ALGO WIZARDS",
+      "highlight": {
+        "heading": "WORKING RULE",
+        "byline": "while (code.result != AC){\nKeepGrinding(code);\n}",
+        "bylineProps": { "fontFamily": "monospace" },
+        "icon": "Running",
+        "iconbyline": "Runs in 1ms"
+      },
+      "description": "Dive into the thrilling world of algorithms and problem-solving, sharpening your skills alongside passionate teammates. Unleash your creativity in solving complex puzzles and challenges. Whether you're a seasoned pro or a budding enthusiast, there's a place for you in our vibrant community. Embark on this exciting journey with us and watch as your coding prowess reaches new heights. Join the adventure today. Wishing everyone high ratings!",
+      "byline": "Live life to the fullest. Afterall, who knows when you fail on a hidden testcase or get hacked after a contest?"
+    }
+  },
+  "media": {
+    "chapterContent": {
+      "leads": [
+        {
+          "name": "Aarush Roy",
+          "codeiiest": "Media Lead",
+          "profilepic": "",
+          "description": "The hand is what limits art, not the mind",
+          "website": "https://www.linkedin.com/in/harshrjn/"
+        }
+      ],
+      "coreMembers": [
+        {
+          "name": "Rishabh Dugar",
+          "role": "Frontend Developer",
+          "website": "https://www.example.com"
+        },
+        {
+          "name": "Soumyajit Karmakar",
+          "role": "Backend Developer",
+          "website": "https://www.example.com"
+        }
+      ],
+      "events": [
+        {
+          "eventName": "Hackathon",
+          "date": "2024-06-15",
+          "location": "Online",
+          "description": "Annual coding competition",
+          "total": 5,
+          "progress": 3
+        },
+        {
+          "eventName": "Workshop: React Basics",
+          "date": "2024-07-10",
+          "location": "College Auditorium",
+          "description": "Learn the fundamentals of React",
+          "total": 2,
+          "progress": 1
+        }
+      ],
+      "iconset": [
+        { "icon": "Shouting", "byline": "Energetic speaker" },
+        { "icon": "Diamond", "byline": "Draws attention" },
+        { "icon": "Ink", "byline": "Great writing skills" },
+        { "icon": "Doge", "byline": "Underrated meme maestro" }
+      ],
+      "title": "MEDIA MOGULS",
+      "highlight": {
+        "heading": "OUR PRINCIPLE",
+        "byline": "from lorem ipsum to essential stories",
+        "icon": "Send",
+        "iconbyline": "Sleep less, send more"
+      },
+      "description": "The Media Team at CodeIIEST is our behind-the-scenes creative powerhouse, transforming pixels and prose into digital enchantment. They craft eye-catching social media campaigns, capture our events in stunning visuals, and breathe life into our online presence. Whether promoting our latest innovations or immortalizing moments of camaraderie, the Media Team ensures our story shines brightly, inspiring, engaging, and connecting with our audience in extraordinary ways.",
+      "byline": "Social media is not our leisure, it's our work!"
+    }
+  },
+  "diversity": {
+    "chapterContent": {
+      "leads": [
+        {
+          "name": "Sarah Jane Topno",
+          "codeiiest": "Diversity Lead",
+          "gdg": "ML Lead",
+          "profilepic": "sarahjane.webp",
+          "description": "Data whisperer by day, algorithm wrangler by night.",
+          "website": "https://www.linkedin.com/in/sarah-jane-topno-32419025a/"
+        }
+      ],
+      "coreMembers": [],
+      "events": [],
+      "iconset": [
+        { "icon": "Fox", "byline": "Works in groups" },
+        { "icon": "Statue", "byline": "Champions of change" },
+        { "icon": "Happy", "byline": "Friendly vibes" },
+        { "icon": "Listen", "byline": "Patient listeners" }
+      ],
+      "title": "FUSION FORCE",
+      "highlight": {
+        "heading": "KEY TRAIT",
+        "byline": "Expert eye roller and professional nodder at meetings",
+        "icon": "Pokemon",
+        "iconbyline": "Everyone is welcome",
+        "imageProps": { "width": "10rem" }
+      },
+      "description": "The Diversity Team at CodeIIEST excels in the delicate art of navigating through meetings with expert eye-rolls and perfected nods. Their tireless efforts include ensuring that every pineapple pizza enthusiast and office ghost feels equally included, albeit with a hint of sarcasm. With a blend of humor and ingenuity, they strive to dismantle monotony, foster unity and champion diversity in all its quirky glory within the CodeIIEST community.",
+      "byline": "Behold, the luminary of our team, gracefully presiding at the forefront of our background image!"
+    }
+  }
 }
