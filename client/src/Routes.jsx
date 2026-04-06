@@ -9,6 +9,7 @@ import ComingSoon from "./screens/comingsoon/ComingSoon";
 import CP_LeaderboardPage from "./screens/CP_Leaderboard/CP_LeaderboardPage";
 import Team from "./screens/Team/Team"
 import Codercard from "./components/Codercard/Codercard";
+import Projects from "./screens/Projects/Projects";
 
 const AllRoutes = () => {
     const location = useLocation();
@@ -29,6 +30,9 @@ const AllRoutes = () => {
             <Route exact path="/events" element={<Events />}></Route>
             <Route exact path="/about" element={<About />}></Route>
             <Route exact path="/leaderboard" element={<CP_LeaderboardPage /> }></Route>
+            {/* <Route exact path="/projects">
+                <Route path="" element={<Projects />}></Route>
+            </Route> */}
             <Route exact path="/test" element={<Codercard coderData={"hello"} /> }></Route>
         </Routes>
     );

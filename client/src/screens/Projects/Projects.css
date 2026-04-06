@@ -1,0 +1,118 @@
+/* ============================================
+   PROJECTS PAGE - MAIN WRAPPER
+   ============================================ */
+
+.chapters-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 2rem;
+    /* Space for absolutely positioned PageHeading */
+    flex-direction: column;
+    position: relative;
+    /* For absolute positioning of children */
+}
+
+/* ============================================
+   CATEGORY FILTER TABS
+   ============================================ */
+
+.project-categories {
+    position: absolute;
+    top: 3rem;
+    /* Adjust based on PageHeading height */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Category Tab Base Styles */
+.category-tab {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e6e6e6;
+    border: 1px solid #5a5a5a;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Category Tab Hover State */
+.category-tab:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #ff5d73;
+    transform: translateY(-2px);
+}
+
+/* Category Tab Active State */
+.category-tab.active {
+    background: #ff5d73;
+    color: #fff;
+    border-color: #ff5d73;
+    box-shadow: 0 4px 12px rgba(255, 93, 115, 0.3);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE & TABLET
+   ============================================ */
+
+/* Large Tablet - PageHeading becomes centered (≤950px) */
+@media (max-width: 950px) {
+    .category-tab {
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* Tablet & Mobile - Touch devices (≤768px) */
+@media (max-width: 768px) {
+    .project-categories {
+        top: 4rem;
+        gap: 0.6rem;
+        flex-wrap: wrap;
+    }
+
+    .category-tab {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.3px;
+    }
+
+    /* Disable hover transform on touch devices */
+    .category-tab:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 580px) {
+    .category-tab {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.7rem;
+        white-space: nowrap;
+        /* Prevent text wrapping */
+    }
+}
+
+/* Mobile - Small devices (≤480px) */
+@media (max-width: 480px) {
+    .project-categories {
+        gap: 0.5rem;
+    }
+}
+
+/* Mobile - Extra small devices (≤360px) */
+@media (max-width: 360px) {
+    .project-categories {
+        gap: 0.4rem;
+    }
+}

@@ -13,7 +13,8 @@ const EventCard = ({
     sideDetails1,
     sideDetails2,
     completionStatus,
-    moreInfo
+    moreInfo,
+    resources
 }) => {
     //taking sample values for datas which we willl get via props
 
@@ -71,9 +72,9 @@ const EventCard = ({
                             animate={{ y: 0 }}
                             transition={{ duration: 0.5 }}
                             className="know-more"
-                            onClick={()=>window.open(moreInfo || "#", "_blank")}
+                            onClick={()=>window.open(moreInfo || resources || "#", "_blank")}
                         >
-                            Know more
+                            { moreInfo ? "Know more" : "Resources"}
                         </motion.button>
                     </div>
                     <div className="lower-right">

@@ -1,20 +1,20 @@
 {
     "development":[
         {
-            "name": "Abhijit Karmakar",
-            "codeiiest": "Frontend lead",
-            "gdg": "UI/UX lead",
-            "profilepic": "abhijitkarmakar.webp",
-            "description":"The feel is more important than the code behind it",
+            "name": "Subhajit Gorai",
+            "codeiiest": "Dev Co-lead",
+            "gdg": "----",
+            "profilepic": "subhajitgorai.jpg",
+            "description":"Before you engineer the system, understand the physics of its flow.",
             "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
 
         },
         {
-            "name": "Soumyajit Karmakar",
+            "name": "Aratrika Gupta",
             "codeiiest": "core member",
-            "gdg": "Development lead",
-            "profilepic": "soumyajitkarmakar.webp",
-            "description":"Eliminating bugs without sprays",
+            "gdg": "Dev Co-lead",
+            "profilepic": "aratika.png",
+            "description":"i am just ://",
             "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
 
         },
@@ -61,11 +61,11 @@
     ],
     "cybersecurity":[
         {
-            "name": "Soham Haldar",
+            "name": "Abhirup Saha",
             "codeiiest": "Cybersecurity Lead",
-            "gdg": "ML core member",
-            "profilepic": "sohamhaldar.webp",
-            "description":"The quieter you become, the more you are able to hear.",
+            "gdg": "Cybersecurity core member",
+            "profilepic": "abhirupsaha.jpg",
+            "description":"aHR0cHM6Ly9qb3liY Wl0LnZlcmNlbC5hcHAv",
             "website": "http://www.linkedin.com/in/soham-haldar-a088a529a"
 
         },
@@ -99,11 +99,11 @@
     ],
     "aiml":[
         {
-            "name": "Angshuman Roy",
+            "name": "Deepon Halder",
             "codeiiest": "ML Lead",
             "gdg": "ML core member",
-            "profilepic": "angshumanroy.png",
-            "description":"カナヅチでも船から落ちなきゃいいじゃないか！",
+            "profilepic": "",
+            "description":"Being wrong isn't a bad thing like they teach you in school. It is an opportunity to learn something",
             "website": "https://www.linkedin.com/in/angshuman-roy-91620022a/"
         },
         {
@@ -145,11 +145,11 @@
     ],
     "cpdsa":[
         {
-            "name": "Suraj Kashyap",
-            "codeiiest": "Treasurer",
+            "name": "Abhinav Verma",
+            "codeiiest": "CP Lead",
             "gdg": "CP lead",
-            "profilepic": "surajkashyap.webp",
-            "description":"In CP, the journey is as important as the destination.",
+            "profilepic": "abhinav.png",
+            "description":"Don't count hours,Count Accepted ",
             "website": "https://www.linkedin.com/in/kashyapsuraj/"
         },        
         {
@@ -180,11 +180,11 @@
     ],
     "media":[
         {
-            "name": "Harsh Ranjan",
+            "name": "Aarush Roy",
             "codeiiest": "Media lead",
             "gdg": "",
-            "profilepic": "harshranjan.webp",
-            "description":"Decoding strings of soul.",
+            "profilepic": "",
+            "description":"The hand is what limits art, not the mind",
             "website": "https://www.linkedin.com/in/harshrjn/"
         },
         {

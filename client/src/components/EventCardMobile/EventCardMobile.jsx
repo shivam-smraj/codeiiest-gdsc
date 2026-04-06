@@ -15,7 +15,7 @@ const EventCardMobile = ({data}) => {
     const status = (data.completionStatus || 50)*0.05;
 
     const Redirect = ()=> {
-        window.open(data.moreInfo, "_blank")
+        window.open(data.moreInfo || data.resources, "_blank")
     }
 
 

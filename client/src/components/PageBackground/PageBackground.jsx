@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const useBackground = (page) => {
-	switch page{
+	switch (page) {
 		case 'development': {
 			
 		}

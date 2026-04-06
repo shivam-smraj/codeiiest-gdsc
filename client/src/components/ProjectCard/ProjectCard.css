@@ -1,0 +1,293 @@
+/* ============================================
+   PROJECT CARD - MAIN CONTAINER
+   ============================================ */
+
+.projectcard-detailed {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #5a5a5a;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 18rem;
+  aspect-ratio: 1/1;
+  max-width: none;
+  color: #e6e6e6;
+  transition: all ease 0.3s;
+  z-index: 4;
+  position: relative;
+}
+
+/* ============================================
+   MEDIA SECTION
+   ============================================ */
+
+.projectcard-detailed .projectcard-media {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background: #000;
+  overflow: hidden;
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projectcard-detailed:hover .projectcard-media {
+  height: 20%;
+}
+
+.projectcard-detailed .projectcard-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .3s ease;
+}
+
+/* ============================================
+   BODY SECTION
+   ============================================ */
+
+.projectcard-detailed .projectcard-body {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.projectcard-detailed:hover .projectcard-body {
+  justify-content: space-between;
+  height: 70%;
+}
+
+/* ============================================
+   HEADER - TITLE & LINKS
+   ============================================ */
+
+.projectcard-detailed .projectcard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.projectcard-detailed .projectcard-titleblock {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.projectcard-detailed .projectcard-title {
+  margin: 0;
+  max-width: 50%;
+  font-size: clamp(1.1rem, 1.5vw, 1.2rem);
+  font-weight: 700;
+  letter-spacing: .5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+.projectcard-detailed .projectcard-links {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* ============================================
+   DATE BADGE
+   ============================================ */
+
+.projectcard-detailed .projectcard-date-badge {
+  background: rgba(255, 255, 255, 0.08);
+  padding: .6rem;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .25rem;
+  max-width: 100px;
+  text-align: left;
+  position: absolute;
+  right: 0;
+}
+
+.projectcard-detailed .projectcard-date-badge .label {
+  font-size: .55rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #c7c7c7;
+}
+
+.projectcard-detailed .projectcard-date-badge .date-value {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* ============================================
+   DESCRIPTION
+   ============================================ */
+
+.projectcard-detailed .projectcard-description p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #dadada;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-clamp: 1;
+  overflow: hidden;
+}
+
+.projectcard-detailed:hover .projectcard-description p {
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+/* ============================================
+   TAGS & ACTION BUTTONS
+   ============================================ */
+
+.projectcard-detailed .projectcard-tags {
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: .2rem;
+  display: none;
+}
+
+.projectcard-detailed:hover .projectcard-tags {
+  display: flex;
+}
+
+/* Base Tag Styles */
+.projectcard-detailed .projectcard-tag {
+  background: #f2f2f2;
+  color: #222;
+  font-size: .7rem;
+  padding: .4rem .8rem;
+  line-height: 1;
+  border-radius: 6px;
+  font-weight: 500;
+  text-transform: lowercase;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.projectcard-detailed .projectcard-tag:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+/* Live & Repo Link Tags */
+.projectcard-detailed .projectcard-tag-live,
+.projectcard-detailed .projectcard-tag-repo {
+  background: #ff5d73;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+}
+
+.projectcard-detailed .projectcard-tag-live svg,
+.projectcard-detailed .projectcard-tag-repo svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Actions (currently hidden) */
+.projectcard-detailed .projectcard-actions {
+  display: none;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE & TABLET
+   ============================================ */
+
+/* Tablet - Medium devices (≤780px) */
+@media (max-width: 780px) {
+  .projectcard-detailed .projectcard-body {
+    padding: 1.2rem 1rem 1rem;
+    gap: 1.1rem;
+  }
+
+  .projectcard-detailed .projectcard-title {
+    font-size: clamp(1.2rem, 2vw, 1.2rem);
+  }
+
+  .projectcard-detailed .projectcard-date-badge {
+    padding: .5rem;
+  }
+
+  .projectcard-detailed .projectcard-date-badge .date-value {
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile - Touch devices (≤768px) */
+/* Make hover state permanent on mobile since hover doesn't work on touch */
+@media (max-width: 768px) {
+
+  /* Always show expanded media */
+  .projectcard-detailed .projectcard-media {
+    height: 30%;
+  }
+
+  /* Always show expanded body */
+  .projectcard-detailed .projectcard-body {
+    height: 70%;
+    justify-content: space-between;
+  }
+
+  /* Always show full description (3 lines) */
+  .projectcard-detailed .projectcard-description p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+  }
+
+  /* Always show tags */
+  .projectcard-detailed .projectcard-tags {
+    display: flex;
+  }
+
+  /* Remove hover transform effects on mobile */
+  .projectcard-detailed .projectcard-tag:hover {
+    transform: none;
+  }
+
+  /* Keep expanded state even if hover somehow triggers */
+  .projectcard-detailed:hover .projectcard-media {
+    height: 30%;
+  }
+
+  .projectcard-detailed:hover .projectcard-body {
+    height: 70%;
+  }
+}
+
+/* Small mobile - Date badge adjustment (≤520px) */
+@media (max-width: 520px) {
+  .projectcard-detailed .projectcard-date-badge {
+    align-self: flex-start;
+  }
+}
+
+/* Small mobile - Card width adjustment (≤480px) */
+@media only screen and (max-width: 480px) {
+  .projectcard-detailed {
+    width: calc(80vw - 24px);
+    aspect-ratio: 3/4;
+    max-width: none;
+  }
+}
