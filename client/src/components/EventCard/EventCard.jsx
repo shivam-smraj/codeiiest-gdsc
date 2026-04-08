@@ -8,11 +8,11 @@ const EventCard = ({
     miniTitle,
     description,
     imageVariant,
-    AvatarSampleData,
-    TagsList,
-    sideDetails1,
-    sideDetails2,
-    completionStatus,
+    AvatarSampleData = [],
+    TagsList = [],
+    sideDetails1 = {},
+    sideDetails2 = {},
+    completionStatus = 0,
     moreInfo,
     resources
 }) => {

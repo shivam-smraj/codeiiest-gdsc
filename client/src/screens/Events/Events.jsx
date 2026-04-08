@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { fetchDataNew } from "../../api/apiservice"; // Import our API service
+import { fetchAdminData } from "../../api/apiservice";
 
 import PageHeading from "../../components/PageHeading/PageHeading";
 import EventCard from "../../components/EventCard/EventCard";
@@ -11,7 +11,7 @@ import "./Events.css";
 
 
 const Events = () => {
-    const [eventsData, setEventsData] = useState([]); // New state to hold fetched events
+    const [eventsData, setEventsData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -28,7 +28,8 @@ const Events = () => {
             try {
                 setLoading(true);
                 setError(null);
-                const data = await fetchDataNew('/api/events'); 
+                // Fetch from Admin Panel public API
+                const data = await fetchAdminData('/api/public/events');
                 setEventsData(data);
             } catch (err) {
                 console.error("Error fetching events:", err);
@@ -38,7 +39,7 @@ const Events = () => {
             }
         };
         getEvents();
-    }, []); // Empty dependency array means this runs once on mount
+    }, []);
 
     const mobileItems = React.useMemo(() => {
         const items = [];

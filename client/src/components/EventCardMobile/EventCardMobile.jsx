@@ -37,13 +37,13 @@ const EventCardMobile = ({data}) => {
                     {/* Clock Icon */}
                     <div className="icon-text-container clock">
                         <img className="icon clock-icon" src={clock} alt="clock-icon" />
-                        <div className="info-text">{data.sideDetails1.text3}</div>
+                        <div className="info-text">{data.sideDetails1?.text3 ?? "—"}</div>
                     </div>
 
                     {/* Calendar Icon */}
                     <div className="icon-text-container calendar">
                         <img className="icon calendar-icon" src={calendar} alt="calendar-icon" />
-                        <div className="info-text">{data.sideDetails1.text2}</div>
+                        <div className="info-text">{data.sideDetails1?.text2 ?? "—"}</div>
                     </div>
 
                     {/* Know More Button */}
