@@ -8,7 +8,7 @@ import IconLoader from "./components/iconloader/IconLoader.jsx";
 import Header from "./components/header/Header.jsx";
 // import { AnimationProvider } from "../AnimationContext.jsx";
 import { Analytics } from "@vercel/analytics/react";
-
+import { useCFAuth } from "./hooks/useCFAuth";
 import { createClient } from "@supabase/supabase-js";
 // SAFE DEBUG: do NOT print secrets, only presence booleans
 try {
@@ -37,6 +37,10 @@ function makeSupabaseClient(url, key) {
 }
 const App = () => {
     const [Loading, setLoading] = useState(true);
+
+    // ── CF Handle modal state ──────────────────────────────────────────────
+    const cfAuth = useCFAuth();
+    const [cfModalOpen, setCFModalOpen] = useState(false);
 
     useEffect(() => {
         if (Loading) {
@@ -150,8 +154,16 @@ const App = () => {
             <Router>
                 <IconLoader />
                 <div className={"animate" + (Loading?" paused-animation":" run-animation")}>
-                    <Navbar></Navbar>
-                    <Header />
+                    <Navbar
+                        cfAuth={cfAuth}
+                        cfModalOpen={cfModalOpen}
+                        onCFModalOpen={() => setCFModalOpen(true)}
+                        onCFModalClose={() => setCFModalOpen(false)}
+                    />
+                    <Header
+                        cfAuth={cfAuth}
+                        onCFModalOpen={() => setCFModalOpen(true)}
+                    />
                     <div className="frame">
                         <img src="/assets/frame.png" alt="" />
                     </div>

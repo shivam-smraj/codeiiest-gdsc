@@ -147,7 +147,7 @@ import { Link, NavLink } from "react-router-dom";
 //     );
 // };
 
-const MenuDrawer = () => {
+const MenuDrawer = ({ cfAuth, onCFModalOpen }) => {
     const [open, setOpen] = useState(false);
 
     const toggleDrawer = (open) => (event) => {
@@ -216,6 +216,34 @@ const MenuDrawer = () => {
                         {item.text}
                     </NavLink>
                 ))}
+
+                {/* CF Handle button — matches nav item style */}
+                <button
+                    id="drawer-cf-handle-btn"
+                    className="item cf-nav-btn"
+                    style={{
+                        background: "none",
+                        border: "none",
+                        padding: 0,
+                        cursor: "pointer",
+                        fontFamily: "inherit",
+                        fontSize: "inherit",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 8,
+                        color: "rgba(255,255,255,0.5)",
+                        fontWeight: 400,
+                        letterSpacing: "inherit",
+                    }}
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        toggleDrawer(false)(e);
+                        onCFModalOpen && onCFModalOpen();
+                    }}
+                >
+                    <span className="material-icons" style={{ fontSize: "1.1rem" }}>code</span>
+                    {cfAuth?.isSignedIn ? "My CF Handle" : "Add CF Handle"}
+                </button>
             </Box>
         </Box>
     );
@@ -238,7 +266,7 @@ const MenuDrawer = () => {
     );
 };
 
-const Header = () => {
+const Header = ({ cfAuth, onCFModalOpen }) => {
     const theme = useTheme();
     // const mobileView = useMediaQuery(theme.breakpoints.down(800));
     return (
@@ -277,7 +305,7 @@ const Header = () => {
                         ></Typography>
                     </Link>
                 </Box>
-                <MenuDrawer />
+                <MenuDrawer cfAuth={cfAuth} onCFModalOpen={onCFModalOpen} />
             </AppBar>
         </Box>
     );

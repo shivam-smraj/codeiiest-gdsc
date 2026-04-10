@@ -1,0 +1,539 @@
+/* ── Overlay ──────────────────────────────────────────────────────────────── */
+.cf-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 1rem;
+}
+
+/* ── Modal card ───────────────────────────────────────────────────────────── */
+.cf-modal {
+  font-family: "Chakra Petch", sans-serif;
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  background: rgba(23, 23, 23, 0.95);
+  border: 1px solid rgba(167, 167, 167, 0.4);
+  border-radius: 12px;
+  padding: 2.2rem 2rem;
+  box-shadow: 0 0 60px rgba(255, 1, 1, 0.08), 0 24px 64px rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+/* corner accent lines — matching the GDSC site frame aesthetic */
+.cf-modal::before,
+.cf-modal::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-color: var(--red, #ff0101);
+  border-style: solid;
+}
+.cf-modal::before {
+  top: 10px;
+  left: 10px;
+  border-width: 2px 0 0 2px;
+}
+.cf-modal::after {
+  bottom: 10px;
+  right: 10px;
+  border-width: 0 2px 2px 0;
+}
+
+/* ── Close button ─────────────────────────────────────────────────────────── */
+.cf-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: color 0.2s;
+  font-family: "Material Icons";
+}
+.cf-modal-close:hover { color: var(--red, #ff0101); }
+
+/* ── Logo / header ────────────────────────────────────────────────────────── */
+.cf-modal-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.6rem;
+}
+.cf-modal-logo img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+.cf-modal-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+.cf-modal-logo-text span:first-child {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+.cf-modal-logo-text span:last-child {
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ── Step title ───────────────────────────────────────────────────────────── */
+.cf-modal-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+.cf-modal-subtitle {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 1.8rem;
+  line-height: 1.5;
+}
+
+/* ── Step indicator ───────────────────────────────────────────────────────── */
+.cf-steps {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 1.6rem;
+}
+.cf-step-dot {
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  transition: background 0.3s;
+}
+.cf-step-dot.active  { background: var(--red, #ff0101); }
+.cf-step-dot.done    { background: var(--teal, #32b3c1); }
+
+/* ── Google sign-in button ────────────────────────────────────────────────── */
+.cf-google-btn {
+  width: 100%;
+  padding: 0.85rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 7px;
+  color: #e3e3e3;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  letter-spacing: 0.02em;
+}
+.cf-google-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.cf-google-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.cf-google-btn svg { flex-shrink: 0; }
+
+/* ── Privacy note ─────────────────────────────────────────────────────────── */
+.cf-note {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  margin-top: 1.2rem;
+  line-height: 1.5;
+}
+
+/* ── Profile step ─────────────────────────────────────────────────────────── */
+.cf-profile-greeting {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.6rem;
+  padding: 0.9rem 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+.cf-profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 1, 1, 0.2);
+  border: 1.5px solid rgba(255, 1, 1, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--red, #ff0101);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.cf-profile-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.cf-profile-info { flex: 1; min-width: 0; }
+.cf-profile-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.cf-profile-roll {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.4);
+  margin-top: 1px;
+}
+
+/* ── Name input ───────────────────────────────────────────────────────────── */
+.cf-field { margin-bottom: 1.2rem; }
+.cf-field label {
+  display: block;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.cf-field input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.cf-field input:focus { border-color: var(--teal, #32b3c1); }
+.cf-field input::placeholder { color: rgba(255,255,255,0.25); }
+
+/* ── CF connect button ────────────────────────────────────────────────────── */
+.cf-connect-btn {
+  width: 100%;
+  padding: 0.85rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--red, #ff0101);
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.cf-connect-btn:hover:not(:disabled) {
+  background: #cc0000;
+  transform: translateY(-1px);
+}
+.cf-connect-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+/* ── Success step ─────────────────────────────────────────────────────────── */
+.cf-verified-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 0 1.5rem;
+}
+.cf-verified-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(50, 179, 193, 0.12);
+  border: 2px solid var(--teal, #32b3c1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.cf-verified-handle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--teal, #32b3c1);
+  margin-bottom: 0.3rem;
+}
+.cf-verified-rating {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+}
+.cf-rating-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* colour-coded ratings matching Codeforces */
+.cf-rating-value.newbie           { color: #808080; }
+.cf-rating-value.pupil            { color: #008000; }
+.cf-rating-value.specialist       { color: #03a89e; }
+.cf-rating-value.expert           { color: #0000ff; }
+.cf-rating-value.candidate-master { color: #aa00aa; }
+.cf-rating-value.master           { color: #ff8c00; }
+.cf-rating-value.grandmaster      { color: #ff0000; }
+
+.cf-leaderboard-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 1.4rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid rgba(50, 179, 193, 0.4);
+  border-radius: 6px;
+  color: var(--teal, #32b3c1);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+  font-family: "Chakra Petch", sans-serif;
+}
+.cf-leaderboard-link:hover {
+  background: rgba(50, 179, 193, 0.1);
+  color: var(--teal, #32b3c1);
+}
+
+/* ── Divider ──────────────────────────────────────────────────────────────── */
+.cf-divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin: 1.4rem 0;
+}
+
+/* ── Sign-out link ────────────────────────────────────────────────────────── */
+.cf-signout {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255,255,255,0.3);
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 0.75rem;
+  text-decoration: underline;
+  padding: 0;
+  transition: color 0.2s;
+  display: block;
+  margin: 0.8rem auto 0;
+}
+.cf-signout:hover { color: rgba(255,255,255,0.6); }
+
+/* ── Spinner ──────────────────────────────────────────────────────────────── */
+.cf-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.25);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: cf-spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+@keyframes cf-spin { to { transform: rotate(360deg); } }
+
+/* ── Handle input wrapper (with spinner overlay) ──────────────────────────── */
+.cf-handle-input-wrap {
+  position: relative;
+}
+.cf-handle-input-wrap input {
+  width: 100%;
+  padding: 0.7rem 2.4rem 0.7rem 0.9rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.cf-handle-input-wrap input:focus { border-color: var(--teal, #32b3c1); }
+.cf-handle-input-wrap input::placeholder { color: rgba(255,255,255,0.25); }
+.cf-handle-spinner {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ── CF profile preview card ─────────────────────────────────────────────── */
+.cf-preview-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0.75rem 1rem;
+  background: rgba(50, 179, 193, 0.07);
+  border: 1px solid rgba(50, 179, 193, 0.3);
+  border-radius: 8px;
+  margin-top: 0.4rem;
+}
+.cf-preview-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1.5px solid rgba(50,179,193,0.4);
+}
+.cf-preview-info { flex: 1; min-width: 0; }
+.cf-preview-handle {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--teal, #32b3c1);
+}
+.cf-preview-rating {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.5);
+  margin-top: 1px;
+}
+.cf-preview-rating.newbie           { color: #808080; }
+.cf-preview-rating.pupil            { color: #008000; }
+.cf-preview-rating.specialist       { color: #03a89e; }
+.cf-preview-rating.expert           { color: #0000ff; }
+.cf-preview-rating.candidate-master { color: #aa00aa; }
+.cf-preview-rating.master           { color: #ff8c00; }
+.cf-preview-rating.grandmaster      { color: #ff0000; }
+.cf-preview-rank { color: rgba(255,255,255,0.35); }
+.cf-preview-tick {
+  color: var(--teal, #32b3c1);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+/* ── Error message ────────────────────────────────────────────────────────── */
+.cf-error {
+  font-size: 0.78rem;
+  color: #ff6b6b;
+  background: rgba(255,1,1,0.08);
+  border: 1px solid rgba(255,1,1,0.2);
+  border-radius: 6px;
+  padding: 0.5rem 0.8rem;
+  margin-top: 0.5rem;
+}
+
+/* ── Verification code display ────────────────────────────────────────────── */
+.cf-verify-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+}
+.cf-verify-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.5;
+}
+.cf-verify-num {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+.cf-code-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(50, 179, 193, 0.08);
+  border: 1.5px dashed rgba(50, 179, 193, 0.5);
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  margin: 0 0 0 30px;
+}
+.cf-code-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--teal, #32b3c1);
+  font-family: "Courier New", monospace;
+}
+.cf-code-copy {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255,255,255,0.4);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+.cf-code-copy:hover { color: var(--teal, #32b3c1); }
+
+/* ── Link style ───────────────────────────────────────────────────────────── */
+.cf-link {
+  color: var(--teal, #32b3c1);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.cf-link:hover { opacity: 0.8; }
+
+/* ── Back button ──────────────────────────────────────────────────────────── */
+.cf-back-btn {
+  padding: 0.85rem 1rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 7px;
+  color: rgba(255,255,255,0.6);
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.cf-back-btn:hover { background: rgba(255,255,255,0.1); }
+.cf-back-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ── Countdown ────────────────────────────────────────────────────────────── */
+.cf-countdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.5rem;
+}
+.cf-countdown strong { color: var(--teal, #32b3c1); }
+
+/* ── Responsive ───────────────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .cf-modal { padding: 1.6rem 1.2rem; }
+}
+
+

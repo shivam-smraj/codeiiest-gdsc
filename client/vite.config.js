@@ -12,6 +12,11 @@ export default defineConfig({
         target: 'http://localhost:3000',
         changeOrigin: true,
       },
+      // Proxy CF OAuth routes to admin panel (needed for cf/start redirect chain)
+      '/api/cf': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+      },
     },
   },
 })
